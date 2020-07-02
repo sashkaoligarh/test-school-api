@@ -1,0 +1,31 @@
+{
+  "name": "test-school-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sashkaoligarh/test-school-api.git"
+  },
+  "author": "Taratunin Alexandr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sashkaoligarh/test-school-api/issues"
+  },
+  "homepage": "https://github.com/sashkaoligarh/test-school-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.0"
+  }
+}
