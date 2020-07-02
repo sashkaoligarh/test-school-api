@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 
 const Lectures = new Schema({
   date: {
-      type: Date,
+      type: String,
       required: true,
   },
   groupNumber:{
