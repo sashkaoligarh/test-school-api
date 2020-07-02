@@ -5,12 +5,14 @@ const bodyParser = require('body-parser')
 const port = process.env.PORT || 4002;
 const mongoose = require(path.resolve('./src/db'));
 const app = express(); 
+const lecturesRouter = require("./src/routes/lecturesRoute");
 
 const server = http.createServer(app)
 
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+app.use("/lectures", lecturesRouter);
 
 async function start() {
     try{
