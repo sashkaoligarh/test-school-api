@@ -1,1 +1,3 @@
-![](https://ibb.co/gFg1XXg)
+
+schematic visual image
+![](https://github.com/sashkaoligarh/test-school-api/blob/master/Frame%201.png)
