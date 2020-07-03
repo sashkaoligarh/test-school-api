@@ -4,7 +4,7 @@ const mongoose = require('mongoose'),
 
 
 exports.init = (cb) => {
-    mongoose.connect(config.db, {
+    mongoose.connect(config.mongoUrl, {
         useUnifiedTopology: true,
         useNewUrlParser: true,
     }, (err) => {
