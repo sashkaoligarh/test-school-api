@@ -8,6 +8,10 @@ const Lectures = new Schema({
       type: String,
       required: true,
   },
+  lectureHall:{
+    type: String,
+    required: true,
+  },
   groupNumber:{
       type: Number,
       required: true, 
