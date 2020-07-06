@@ -4,31 +4,15 @@ var Schema = mongoose.Schema;
 
 
 const Student = new Schema({
-  firstName: {
+  name: {
     type: String,
+    required:true
 
   },
-  lastName:{
+  groupNumber:{
     type: String,
-
-  },
-  age:{
-    type: Number,
-
-  },
-  
-  sex:{
-    type: String,
-
-  },
-  image:{
-    type: Array
-  },
-  description:{
-    type: String,
-    default:''
+    required: true
   }
-
 })
 
 module.exports = mongoose.model('student', Student)

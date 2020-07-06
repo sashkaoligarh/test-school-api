@@ -3,32 +3,17 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-const Clothes = new Schema({
-  title: {
-    type: String,
-
-  },
-  type:{
-    type: String,
-
-  },
-  price:{
+const Group = new Schema({
+  studentList: [{
+    name :{
+      type: String,
+    },
+    required: true
+  }],
+  groupNumber:{
     type: Number,
-
   },
-  
-  sex:{
-    type: String,
-
-  },
-  image:{
-    type: Array
-  },
-  description:{
-    type: String,
-    default:''
-  }
 
 })
 
-module.exports = mongoose.model('Clothes', Clothes)
+module.exports = mongoose.model('group', Group)
