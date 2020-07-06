@@ -2,11 +2,11 @@ const express = require('express')
 const http = require('http')
 const path = require('path')
 const bodyParser = require('body-parser')
-const mongoose = require(path.resolve('./src/db'));
+const mongoose = require(path.resolve('./db'));
 const app = express(); 
-const lecturesRouter = require("./src/routes/lecturesRoute");
-const config = require('./src/config/config')
-const auth = require('./src/middleware/authorization')
+const lecturesRouter = require("./routes/lecturesRoute");
+const config = require('./config/config')
+const auth = require('./middleware/authorization')
 
 const server = http.createServer(app)
 const port = config.port
